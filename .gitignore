@@ -1,0 +1,19 @@
+# --- Data and PII ---
+# Ignore all raw documents containing IDs, KYC forms, and Proof of Residence
+data/ids/
+data/kyc_forms/
+data/pors/
+
+# Ignore local databases and lookup tables
+data/lookup/*.db
+!data/lookup/usage.md
+
+# --- Vector Stores ---
+# FAISS indices are often large and can be regenerated from source data
+faiss_kyc_index_*/
+
+# --- Environment and Python ---
+.env
+.venv/
+__pycache__/
+*.pyc
