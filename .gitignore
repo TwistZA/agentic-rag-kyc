@@ -15,5 +15,6 @@ faiss_kyc_index_*/
 # --- Environment and Python ---
 .env
 .venv/
+.qwen
 __pycache__/
 *.pyc
